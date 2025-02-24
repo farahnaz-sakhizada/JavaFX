@@ -3,10 +3,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.LabelViewController">
    <children>
-      <Label fx:id="titleLabel" layoutX="286.0" layoutY="117.0" text="Level 1" />
-      <Label fx:id="textLabel" layoutX="236.0" layoutY="237.0" text="This is some CSS Styling" />
+      <Label fx:id="titleLabel" layoutX="-2.0" layoutY="117.0" prefHeight="18.0" prefWidth="606.0" text="Level 1" />
+      <Label fx:id="textLabel" layoutX="-2.0" layoutY="237.0" prefHeight="18.0" prefWidth="606.0" text="This is some CSS Styling" />
+      <Button layoutX="275.0" layoutY="309.0" mnemonicParsing="false" onAction="#switchToShapScene" text="Go to Shap" />
    </children>
 </AnchorPane>

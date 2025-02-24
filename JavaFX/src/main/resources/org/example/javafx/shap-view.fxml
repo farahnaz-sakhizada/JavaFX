@@ -11,5 +11,7 @@
       <Button layoutX="274.0" layoutY="29.0" mnemonicParsing="false" onAction="#up" text="Up" />
       <Button layoutX="274.0" layoutY="350.0" mnemonicParsing="false" onAction="#down" text="Down" />
       <Circle fx:id="myCircle" fill="DODGERBLUE" layoutX="298.0" layoutY="188.0" radius="80.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="418.0" layoutY="283.0" mnemonicParsing="false" onAction="#switchToLabelScene" text="Go to Labels" />
+
    </children>
 </AnchorPane>
