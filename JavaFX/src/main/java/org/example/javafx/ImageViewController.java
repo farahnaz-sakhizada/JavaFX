@@ -12,18 +12,18 @@ public class ImageViewController {
     Button change_btn;
     Image foto1= new Image(getClass().getResourceAsStream("foto1.jpg"));
     Image foto2= new Image(getClass().getResourceAsStream("foto2.png"));
-    private Boolean isFoto1= true;
-    public void displayImage(){
-        picture_iv.setImage(foto2);
-    }
+    Image foto3= new Image(getClass().getResourceAsStream("light_off.jpg"));
+    Image foto4= new Image(getClass().getResourceAsStream("light_on.jpg"));
+
+    private int currentImageIndex=0;
+    Image [] images=new Image [] {foto1,foto2, foto3,foto4};
     public void changeImage(){
-        if (isFoto1){
-            picture_iv.setImage((foto2));
+        if (currentImageIndex<images.length-1){
+            currentImageIndex++;
+            picture_iv.setImage((images[currentImageIndex]));
         }else{
-            picture_iv.setImage(foto1);
+            currentImageIndex=0;
+            picture_iv.setImage(images[currentImageIndex]);
         }
-        isFoto1= !isFoto1;
     }
-
-
 }

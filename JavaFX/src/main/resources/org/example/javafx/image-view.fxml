@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.ImageViewController">
    <children>
-      <Button fx:id="change_btn" layoutX="240.0" layoutY="346.0" mnemonicParsing="false" onAction="#displayImage" text="Change to Picture 2" />
+      <Button fx:id="change_btn" layoutX="240.0" layoutY="346.0" mnemonicParsing="false" onAction="#changeImage" text="change Image" />
       <ImageView fx:id="picture_iv" fitHeight="275.0" fitWidth="420.0" layoutX="90.0" layoutY="50.0" onMouseEntered="#changeImage" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@foto1.jpg" />

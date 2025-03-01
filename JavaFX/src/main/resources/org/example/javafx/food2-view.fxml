@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.Food2ViewController">
+   <children>
+      <ChoiceBox fx:id="myChoiceBox" layoutX="218.0" layoutY="200.0" prefWidth="150.0" />
+      <Label fx:id="myLabel" alignment="CENTER" layoutX="-1.0" layoutY="127.0" prefHeight="18.0" prefWidth="600.0" text="Pick a dish">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

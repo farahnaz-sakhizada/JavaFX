@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class SignInViewController {
+public class  SignInViewController {
     @FXML
     Label wellcome_lbl;
     @FXML
@@ -16,8 +16,21 @@ public class SignInViewController {
     int age;
 
     public void submit (ActionEvent event){
-        age= Integer.parseInt(age_tf.getText());
-        System.out.println(age);
+        try{
+            age= Integer.parseInt(age_tf.getText());
+            if (age >=18){
+                wellcome_lbl.setText("You are now signed in");
+            }else{
+                wellcome_lbl.setText("You must be 18+ to sign in");
+            }
+        }
+        catch(NumberFormatException e){
+            System.out.println("Enter only numbers pls");
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+
     }
 
 

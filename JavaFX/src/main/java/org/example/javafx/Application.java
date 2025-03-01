@@ -14,7 +14,7 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws IOException {
         try{
-            Parent root= FXMLLoader.load(getClass().getResource("image-view.fxml"));
+            Parent root= FXMLLoader.load(getClass().getResource("progressbar-view.fxml"));
             Scene scene = new Scene(root);
             //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
             //String css= this.getClass().getResource("application.css").toExternalForm();
